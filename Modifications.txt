@@ -1,0 +1,81 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>More types<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+------CSVProcessor--------
+The type of each column should be pass to OrderByExpression class by a parameter.
+
+    four new helper functions are needed:
+
+    compareTime(String time_1, String time_2)
+    ------> return 1 if time_1 is later than time_2
+	           0 if time_1 and time_2 are exactly same
+		   -1 if time_1 is before time_2	
+	
+    compareDate(String date_1, String date_2)
+    ------> return 1 if date_1 is later than date_2
+	           0 if date_1 and date_2 are exactly same
+		   -1 if date_1 is before date_2	
+
+    compareFloat(String float_1, String float_2)
+    ------> return 1 if float_1 is greater than float_2
+	           0 if float_1 and float_2 are exactly same
+		   -1 if float_1 is smaller float_2
+
+    compareBoolean(String boolean_1, String boolean_2)
+    ------> return 1 if boolean_1 is true and boolean_2 is false
+	           0 if boolean_1 and boolean_2 are exactly same
+		   -1 if boolean_1 is false and boolean_2 is true
+    These four functions are used in the function compareValue().
+    In addition, some if statements should be added into the function
+    compareValue(). determine the type being compared and then call the
+    corresponding helper function(compareTime(), compareDate()
+    compareFloat(), compareBoolean()).
+
+-------Table--------
+Elements of new type should be store in the format of string.
+ie boolean ----> "true" or "false"
+   float 12.000 ----> "12.000"
+   date 30-12-1989(dd-mm-yyyy) -----> "30-12-1989"
+   time 15:20:00 (hh:mm:ss)-----> "15:20:00"
+
+
+
+
+>>>>>>>>>>>>>"occursin" comparison for rows expressions<<<<<<<<<<<<<<
+----------CSVProcessor--------------
+In the function rowsHandler a new if statement is needed:
+	if the length of paramArray is 4, do the same as before
+	else if the length of the paramArray is 5 and the
+        paramArray[2] is "occursin" :
+        first try to define two Tables table_1 and table_2 using the 
+        paramArray[0] and paramArray[3]
+        if any one of the table not exist
+        throws new Table otFoundException .
+	define two new variable strings def_1 and def_2,
+        let def_1 to be the defination of table_1 of paraArray[1]
+        let def_2 to be the defination of table_2 of paraArray[4]
+        if the types of two definations match, then all function
+         occursionrow(table_1, table_2, def_1, paramArray[1], paramArray[4])  
+	else, throws new DefinationNotMatchException .
+	
+Also there should be more Exceptions:
+TableNotFoundException()
+DefinationNotMatchException()
+
+---------------RowExpression--------------
+A new function called          
+	occursionrow( Table   table_1,
+		      Table   table_2, 
+                      String   def_1, 
+		      String  paramArray[1],
+                      String  paramArray[4])  should be added
+
+       this function go through all the contents of column
+        paramArray[1] of table_1 and compare the value with
+       values of column paramArray[4] of table_2. If these two
+       values match, then keep track of the row number of these row
+       in a list.
+       After this, build a new table with the list and copy the
+        elenments in table_1 of selected rows to the new table.
+       return the new table.
+       
+

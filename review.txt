@@ -1,0 +1,87 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>CSVProcessor<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+----->Summary
+	Generally, I believe that this CSVProcessor can function well, but 
+	its documentaion needs impovement. The first half is carefully wirtten
+	while the second half is not that good. The second half needs to be
+	clearier.The design of this class is nice. But some of the functions should
+	be put in a separate class.
+	All the helper functions and instance variables are private.
+	All the function names are easily understood and I like the variable names
+	they uses. 
+
+----->Documentation
+line 31 the Javadoc comment should start with /** 
+line 35 the Javadoc comment should start with /**
+line 85 the Javadoc comment does not mention that the function get
+	UserInput() throws an IOException exception
+line 96 this line is neither a comment nor a code, it should be 
+	deleted
+line 101 the Javadoc comment does not mention that this function 
+	throws an InputException exception
+line 106 the function's @return statement is missing
+line 151 the function's Javadoc does mention that a line is 
+	printed when the raw_input is a define command
+line 207 the function's Javadoc is not specific enough for users.
+	Need more information on the return value.
+line 235 the Javadoc comment on @param scopeVariable is missing.
+line 246 the format of param columnDefinitions is not given.
+ 	it needs to be more specific.
+line 265 the function splitColumnDefinition() also converts all
+	column headers to lowercase. But this is not metioned in the
+	Javadoc.
+line 271 the Javadoc of main() is not specific enough. Many important
+	things are not mentioned.(such as what main() does)
+line 359 the @return statement of function loadHander is missing.
+line 380 the @return statement of function columnsHandler is missing.
+line 402 the Javadoc for function rowsHandler is not clear for users.
+line 407 the @return statement of function rowsHandler is missing.
+line 428 the @return statement of function productHandler is missing.
+line 457 the @return statement of function joinHanderler is missing.
+line 484 the Javadoc of naturalJoinHandler is not clear for users.
+line 489 the @return statement of function naturalJoinHandler is missing.
+line 497 the Javadoc of orderbyHandler is not clear for users.
+line 502 the @return statement of function orderbyHandler is missing.
+
+
+----->Design
+line 39 the function compareValue is too long
+line 39 the function compareValue is not supposed to be in this
+	class from design perspective
+line 100 the fuction identifyCommandType() is too long
+line 520 it will be better if the exception is written in the
+ 	separate class.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>OrderbyExpression<<<<<<<<<<<<<<<<<<<<<<<<<
+----->Summary
+	This class is well-written and well-considered. All the helper functions
+	are private. The Javadoc is pretty clear and all the comments are helpful.
+	All the function names are easily understood and I like the variable names
+	they uses. The design are well-organised and well-considered. To be 
+	honest, it is hard to find mistakes in this class.
+
+----->Documentation
+line 10 The Javadoc is not clear. What does it mean by "Take a column and
+	a column index"? Should it be "Take a table and a column index."?
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Table<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+----->Summary
+	This class is well-written and well-considered. All the helper functions and
+	instance variables are private.
+	All the function names are easily understood and I like the variable names
+	they uses. The design are well-organised and well-considered.
+	But some of the Javadocs are not clear. It needs more documentation to clearify
+	the content of table. There is also something they can improve on design.
+	
+----->Documentation
+line 26 A clearfy on the rows and columns is needed.(ie, is this 2D
+	array array of columns or array of rows.)
+line 41 A clearfy on the rows and columns is needed.(ie, is this 2D
+	array array of columns or array of rows.)
+line 54 The Javadoc is not clear since it does not clearify the
+	matching relation.(ie, is x for rows or y for rows)
+line 112 It is better to use the word "returns" than "gets" in the
+	Javadoc. 
+
+----->Design
+line 128 It will be better if function equalTo() is in another class. 

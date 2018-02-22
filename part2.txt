@@ -1,0 +1,73 @@
+===========Table class===================
+Summary: 
+	The Table class is well-done. It's in a good coding style, all the methods follow the Java naming conventions. All the methods are static and instances variables are private.
+One minor issue is that there is a missing space for the "==" sign.
+The design is acceptable and avoids redundancy if we change one of the element in the table.But its very complicated to when we are adding a whole row or a whole column to the table, the class should contain some sort of addRow or addCol methods.The javadoc has minor issue on clearness that it is very hard to understand by the user.Specific suggestions for changes and improvements appear below.
+
+*Documentation:
+line 40   Should have explained better for the constructor of Table
+
+line 26	  Which one is your row and which one is your column? It is very confusing.
+
+*Style
+line 136-137  The "==" sign should be spaced.
+
+
+===========Orderby Expression============
+Summary:
+	The Orderby class is well-done. It's in a good coding style, all the methods follow the Java naming conventions. All the methods are static, and the javadoc is easy to understand and follow. No major problems in this class, the only minor issue is missing
+one @param statement in the javadoc. Specific suggestions for changes and improvements appear below.
+
+*Documentation:
+line 53	The java doc in Orderby Expression need another @param statement for int 	          parameter col.
+
+line 112  What do you mean by "Gets the numbers of rows?" What exactly is the 		            information?
+
+
+=============CSVProcessor================
+Summary:
+	CSVProccessor works pretty well and every method of this program satisfied the needed according to the assignment.But, CSVProcessor is in a questionable design.It is too long, some of the method should be separated in separete classes. There are lots of problems with the javadoc and didn't strictly follow the javadoc convention. Some of the methods can be simplified. Some methods can be private. Specific suggestions for changes and improvements appear below.
+
+*Design:
+		
+line 44-47	The javadoc for method compareValue is longer than 40 lines.
+
+line 91		The code for method getUserInput() is more than 40 lines.
+
+line 92-95 	The lines should be reduced to "return br.readline()".
+
+line 169	The code for indentifyCommandType() method is more than 40 lines.
+ of column headers into a String Array
+line 211-212	The codes dealing with user's input should use
+		regular expressions instead of parsing strings.
+		
+line 238,248	The getDefinition and setDefinition methods should be private since
+		its only used in CSVProcessor
+
+*Style:
+		The class CSVProcessor is very long.
+line 362,382	The static method names should be verb according to Java naming 
+     409, 430   conventions.
+     459, 491
+     504
+
+
+*Documentation:
+line 40,233	The javadoc for static methods should start using third 		       243,254	person's verb such as "Gets" instead of "Get".
+     
+line 80, 101 	The javadoc for static methods should start with a verb 		       201,354    like "Returns", "Gets" instead of nouns like "this function".
+     374,402
+     422,451
+     484,497
+     
+line 101	The javadoc is missing @Exception statement.
+
+line 81 	The javadoc for getUserInput method has grammar mistake. Instead of 				"raw user input" should be "user's input".
+
+line 108 	The javadoc for indentifyCompareType() method has spelling mistake. 				The word should be "from" instead of "form.
+
+line 359, 380   The javadoc is missing @return for most of the Handler methods.
+     407,428
+     457,502
+
+line 517	The javadoc doesn't match the class it is describing.
