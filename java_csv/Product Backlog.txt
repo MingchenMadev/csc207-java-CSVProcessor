@@ -1,0 +1,47 @@
+Tasks needing to be completed:
+***Program design:
+	-CRC card design
+	-Product and Sprint backlogs.
+	-Avoid all redundancy in our codes.
+***Assigning tasks to team members
+	-c1maming's tasks: Backlogs and Sprint backlogs
+		Row Operations, Column Operations and Load command
+		from Table class.
+	-c0dongyv's Tasks: FileHandling Class(Including handling expections and 					etc.) and work parts of CSVProcessor,also finish
+				Join Operation in Table Class.
+***Java Coding and Testing
+**Table Class
+	*Load command
+	-Column Operation
+	-Row Operation
+	-Product Operation
+	-Join Operation
+	-Natural Join Operation
+	-Order-by Operation
+**CSVProcessor:
+	Read the following commands:
+		*Definintion command
+		*Assignment command
+		*Print command
+		*Save command
+		*Exit command
+
+
+**FileHandling Class
+	-Convert file top a String
+	-Handling Exceptions and etc.
+
+	
+***Testing codes
+	-Write the test cases before we start coding
+	-Test and find the problems and fix them
+	-Try to think with the respective of the user to see how to improve
+	 our codes.
+	-Test large amount of data and try to make our codes efficient.
+
+
+***Reviewing and finding flaws.
+	-Make daily status reports.
+	-Think of user stories and enchancements
+	-Review about what we did everyday and find flaws
+	-Fixes the flaws and make our work better

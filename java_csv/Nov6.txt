@@ -1,0 +1,17 @@
+We did:
+Part of the coding of FileReader class.
+We write the function to handle all kinds of expressions in CSVProcessor class, including Column_evaluate, Rows_evaluate, Join_evaluate, Product_evaluate, 
+Natural_join_evaluate, Orderby_evaluate. These function will call the corresponding function under the Table class and pass the instance variables to
+those functions.
+Also, we write the variable assignment function, which is used to store name string, table object pairs in a Hashmap called Assignment. This function will be called after the evaluation of expressions.
+
+We will:
+Before the next day,
+set up the team meeting on Nov 7th and 
+do the works that is assigned to all the team members. 
+We would try to finish the core parts of table class and make some test_cases.
+
+Things that is impeding our progress:
+We schedule and assign the work so that everyone can work on it at home.
+Our schdules differ a lot so that we are not able to work and discuss
+everything together.

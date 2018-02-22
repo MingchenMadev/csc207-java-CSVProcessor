@@ -1,0 +1,18 @@
+We did:
+We finished Column class
+We recreated the constructor of the table class
+then table now is consisting lots of columns.
+*Load
+*add Column
+We reconsider and modify the presetation of a table
+We did most of the docstrings and comments for Table class
+
+
+We will:
+Before the next day,
+set up the team meeting on Nov 8th and 
+We plan to check our code to see if any rendundcy or flaws are in our codes.
+We would try to finish some test_cases.
+
+Things that is impeding our progress:
+Nothing.

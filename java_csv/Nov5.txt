@@ -1,0 +1,18 @@
+We did:
+Viewed and consider about comments from the TA.
+Assigned tasks to individual team member and finish the ProductBacklog.
+Fixed the flaws in our design and make the code more efficient avoid redundancy.
+Part of the coding of FileHandling Class and made some test cases for the commands.
+
+We will:
+Before the next day,
+set up the team meeting on Nov 6th and 
+do the works that is assigned to all the team members. 
+We will try to finish every part of the Commands and combine them together.
+
+Things that is impeding our progress:
+There are group members missing due to communication errors and busy schedules.
+It takes a lot of work to get everyone's thoughts together and better our design.
+We schedule and assign the work so that everyone can work on it at home.
+And after a long discussion,we bring our thoughts together and complete the final design of our codes.
+

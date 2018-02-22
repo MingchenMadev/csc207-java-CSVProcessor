@@ -1,0 +1,19 @@
+We did:
+We finished CSVExpression class
+	made the functions for most of the expressions in the product backlog.
+	created test cases for all of them
+We finished CSVCommand class
+	made the functions for the commands in the product backlog and created 	test cases for all of them.
+We modify the constructor of the table class.
+and we gather all our classes together.
+We used row presentation to present the table now.
+We modified the docstrings and comments for Table class.
+
+We will:
+Before the next day,
+set up the team meeting on Nov 10th and 
+We assign works to team members for them to work on at home.
+We would try to finish some test cases for our modified classes.
+
+Things that is impeding our progress:
+Everyone has different ideas of re-modifing our code, it is very hard to get Everyone's thought together.

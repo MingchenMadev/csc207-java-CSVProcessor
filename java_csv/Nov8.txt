@@ -1,0 +1,27 @@
+We did:
+We finished Row class
+*Insert
+*size
+*CombineRow
+*getitem
+We modify the constructor of the table class.
+*valueCompare
+*Size
+*Load
+*add Rows
+*Join
+*Product
+*Order_by
+We combined Row class, Column class, Table class and FileReader together
+and we made them work properly.
+We used row presentation to present the table now.
+We modified the docstrings and comments for Table class.
+
+We will:
+Before the next day,
+set up the team meeting on Nov 9th and 
+We assign works to team members for them to work on at home.
+We would try to finish some test cases for our modified classes.
+
+Things that is impeding our progress:
+Everyone has different ideas of re-modifing our code, it is very hard to get Everyone's thought together.

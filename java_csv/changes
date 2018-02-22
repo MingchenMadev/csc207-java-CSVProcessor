@@ -1,0 +1,77 @@
+change to CSVCommand
+    public Table product(Table table1, Table table2){
+        Table new_table = new Table();
+        for(int i = 0; i < table1.getSize(); i++){
+            for(int j = 0; j < table2.getSize(); j++){
+                Row tmp = CombineRow(table1.getRow(i), table2.getRow(j));
+                new_table.addRow(tmp);
+            }
+        }
+        new_table.setheader(CombineHeader(table1.getHeader(),
+                table2.getHeader()));
+        new_table.getHeader().update();
+        new_table.settype(combine_arrayl(table1.gettype(), table2.gettype()));
+        return new_table;
+    }
+    
+    
+    
+        private Header CombineHeader(Header r1, Header r2){
+        Header new_row = new Header();
+        for(int i = 0; i< r1.getLen();i++){
+                new_row.insert(r1.get(i));
+        }
+        for(int j = 0; j< r2.getLen();j++){
+                new_row.insert(r2.get(j));
+        }
+        return new_row;
+    }
+    
+    
+    
+    
+    public Table join(Table table1,Table table2, int a, int b) throws IndexOutOfRangeExeption{
+        if(a > table1.gettype().size()||b > table2.gettype().size()){
+                throw new IndexOutOfRangeExeption();
+        }
+        Table tmp = product(table1,table2);
+        tmp.setheader(CombineHeader(table1.getHeader(), table2.getHeader()));
+        tmp.getHeader().update();
+        tmp.settype(combine_arrayl(table1.gettype(), table2.gettype()));
+        return thita_rows(tmp,a, b, "==");
+    }
+   
+   
+   
+   Change to Row class
+   
+       @Override
+    public String toString(){
+        String str = "";
+        for(int i = 0; i< this.getLen() - 1; i++){
+            str += (this.get(i) + ",");
+            
+        }
+        str += this.get(this.getLen() - 1);
+        if (str.equals(",")){
+            return "";
+        } else {
+            return str.trim();
+        }
+
+    }
+    
+    
+    change to Header method
+    
+        public Header(){
+    }
+    
+        @Override
+    public Header clone(){
+        Header output_row = new Header();
+        for(String element :this.getcontents()){
+            output_row.insert(element);
+        }
+        return output_row;
+    }

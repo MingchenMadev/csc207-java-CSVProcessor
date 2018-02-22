@@ -1,0 +1,10 @@
+Week 1 till <Oct.26>
+
+1.CRC card     <Oct.23 11:00 p.m.>
+
+2.Implement load function and assignment function 
+  from CSVProcessor <Oct.26 11:00 p.m.>
+
+3.Implement Table class <Oct.26 11:00p.m.>
+
+Week 2 till<Nov.9>
